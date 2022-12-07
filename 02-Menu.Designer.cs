@@ -328,6 +328,7 @@
             this.pctServico.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctServico.TabIndex = 10;
             this.pctServico.TabStop = false;
+            this.pctServico.Click += new System.EventHandler(this.pctServico_Click);
             // 
             // pctEmpresa
             // 
@@ -338,6 +339,7 @@
             this.pctEmpresa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctEmpresa.TabIndex = 9;
             this.pctEmpresa.TabStop = false;
+            this.pctEmpresa.Click += new System.EventHandler(this.pctEmpresa_Click);
             // 
             // pctFuncionario
             // 
@@ -348,6 +350,7 @@
             this.pctFuncionario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctFuncionario.TabIndex = 8;
             this.pctFuncionario.TabStop = false;
+            this.pctFuncionario.Click += new System.EventHandler(this.pctFuncionario_Click);
             // 
             // pctCliente
             // 
@@ -358,6 +361,7 @@
             this.pctCliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctCliente.TabIndex = 7;
             this.pctCliente.TabStop = false;
+            this.pctCliente.Click += new System.EventHandler(this.pctCliente_Click);
             // 
             // lblMensagem
             // 
