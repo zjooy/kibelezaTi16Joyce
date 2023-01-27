@@ -27,5 +27,10 @@ namespace kibelezaTi16Joyce
         {
             pnlCliente.Location = new Point(this.Width / 2 - pnlCliente.Width / 2, this.Height / 2 - pnlCliente.Height / 2);
         }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            new frmCadCliente().Show();
+        }
     }
 }

@@ -109,6 +109,7 @@
             this.btnCadastrar.TabIndex = 13;
             this.btnCadastrar.Text = "CADASTRAR";
             this.btnCadastrar.UseVisualStyleBackColor = false;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // pnlBusca
             // 

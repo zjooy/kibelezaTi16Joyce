@@ -308,6 +308,7 @@
             this.lblSobre.Text = "Sobre";
             this.lblSobre.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblSobre.UseMnemonic = false;
+            this.lblSobre.Click += new System.EventHandler(this.lblSobre_Click);
             // 
             // pctRelatorio
             // 
@@ -318,6 +319,7 @@
             this.pctRelatorio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctRelatorio.TabIndex = 11;
             this.pctRelatorio.TabStop = false;
+            this.pctRelatorio.Click += new System.EventHandler(this.pctRelatorio_Click);
             // 
             // pctServico
             // 

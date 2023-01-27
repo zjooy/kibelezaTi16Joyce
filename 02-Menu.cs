@@ -148,5 +148,17 @@ namespace kibelezaTi16Joyce
             new frmCliente().Show();
             Hide();
         }
+
+        private void pctRelatorio_Click(object sender, EventArgs e)
+        {
+            new frmRelatorio().Show();
+            Hide();
+        }
+
+        private void lblSobre_Click(object sender, EventArgs e)
+        {
+            new frmSobre().Show();
+            Hide();
+        }
     }
 }

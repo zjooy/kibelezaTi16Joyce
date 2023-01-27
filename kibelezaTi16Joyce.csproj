@@ -88,6 +88,42 @@
     <Compile Include="07-CadEmpresa.Designer.cs">
       <DependentUpon>07-CadEmpresa.cs</DependentUpon>
     </Compile>
+    <Compile Include="08-CadFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="08-CadFuncionario.Designer.cs">
+      <DependentUpon>08-CadFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="09-CadCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="09-CadCliente.Designer.cs">
+      <DependentUpon>09-CadCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="10-CadServico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="10-CadServico.Designer.cs">
+      <DependentUpon>10-CadServico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="11-Relatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="11-Relatorio.Designer.cs">
+      <DependentUpon>11-Relatorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="12-Sobre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="12-Sobre.Designer.cs">
+      <DependentUpon>12-Sobre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="13-ajuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="13-ajuda.Designer.cs">
+      <DependentUpon>13-ajuda.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="01-Login.resx">
@@ -110,6 +146,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="07-CadEmpresa.resx">
       <DependentUpon>07-CadEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="08-CadFuncionario.resx">
+      <DependentUpon>08-CadFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="09-CadCliente.resx">
+      <DependentUpon>09-CadCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="10-CadServico.resx">
+      <DependentUpon>10-CadServico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="11-Relatorio.resx">
+      <DependentUpon>11-Relatorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="12-Sobre.resx">
+      <DependentUpon>12-Sobre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="13-ajuda.resx">
+      <DependentUpon>13-ajuda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
