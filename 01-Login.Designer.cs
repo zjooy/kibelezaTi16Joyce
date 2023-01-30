@@ -97,9 +97,11 @@
             this.txtSenha.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSenha.Location = new System.Drawing.Point(56, 22);
             this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(289, 18);
             this.txtSenha.TabIndex = 2;
             this.toolTip1.SetToolTip(this.txtSenha, "Digite sua senha");
+            this.txtSenha.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSenha_KeyPress);
             // 
             // pctSenha
             // 
@@ -143,6 +145,7 @@
             this.txtEmail.Size = new System.Drawing.Size(289, 18);
             this.txtEmail.TabIndex = 2;
             this.toolTip1.SetToolTip(this.txtEmail, "Digite seu email");
+            this.txtEmail.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEmail_KeyPress);
             // 
             // pctEmail
             // 

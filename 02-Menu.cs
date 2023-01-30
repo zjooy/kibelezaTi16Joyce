@@ -39,21 +39,34 @@ namespace kibelezaTi16Joyce
         {
             pnlMenu.Location = new Point(this.Width / 2 - pnlMenu.Width / 2, this.Height / 2 - pnlMenu.Height / 2);
 
+            
 
             timer1.Start();
 
             if (hora >= 6 && hora <= 12)
             {
-                lblMensagem.Text = "Bom dia, "+"Joyce"+"!";
+                lblMensagem.Text = "Bom dia, "+ variaveis.usuario +"!";
             }
             else if (hora >= 12 && hora < 18)
             {
-                lblMensagem.Text = "Boa tarde, "+"Joyce"+"!";
+                lblMensagem.Text = "Boa tarde, "+ variaveis.usuario + "!";
             }          
             else
             {
-                lblMensagem.Text = "Boa noite, " + "Joyce" + "!";
+                lblMensagem.Text = "Boa noite, " + variaveis.usuario + "!";
             }
+
+            if (variaveis.nivel != "ADMINISTRADOR")
+            {
+                pctFuncionario.Enabled = false;
+                pctEmpresa.Enabled = false;
+            }
+            else
+            {
+                pctFuncionario.Enabled = true;
+                pctEmpresa.Enabled = true;
+            }
+
         }
 
         private void timer1_Tick(object sender, EventArgs e)
