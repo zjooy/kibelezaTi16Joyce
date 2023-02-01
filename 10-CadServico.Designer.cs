@@ -29,8 +29,26 @@
         private void InitializeComponent()
         {
             this.pnlCadServico = new System.Windows.Forms.Panel();
-            this.pctFoto1 = new System.Windows.Forms.PictureBox();
+            this.pnlFoto = new System.Windows.Forms.Panel();
+            this.btnFoto4 = new System.Windows.Forms.Button();
+            this.pctFoto4 = new System.Windows.Forms.PictureBox();
+            this.btnFoto3 = new System.Windows.Forms.Button();
+            this.pctFoto3 = new System.Windows.Forms.PictureBox();
+            this.btnFoto2 = new System.Windows.Forms.Button();
+            this.pctFoto2 = new System.Windows.Forms.PictureBox();
+            this.btnFoto1 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.lblFoto = new System.Windows.Forms.Label();
+            this.pctFoto1 = new System.Windows.Forms.PictureBox();
+            this.cmbEmpresa = new System.Windows.Forms.ComboBox();
+            this.lblEmpresa = new System.Windows.Forms.Label();
+            this.txtTexto = new System.Windows.Forms.TextBox();
+            this.lblTexto = new System.Windows.Forms.Label();
+            this.cmbTempExecucao = new System.Windows.Forms.ComboBox();
+            this.lblTempExecucao = new System.Windows.Forms.Label();
+            this.txtDescricao = new System.Windows.Forms.TextBox();
             this.lblDescricao = new System.Windows.Forms.Label();
             this.btnFechar = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
@@ -46,35 +64,17 @@
             this.lblNomeServico = new System.Windows.Forms.Label();
             this.lblCodigo = new System.Windows.Forms.Label();
             this.lblCadServico = new System.Windows.Forms.Label();
-            this.txtDescricao = new System.Windows.Forms.TextBox();
-            this.cmbTempExecucao = new System.Windows.Forms.ComboBox();
-            this.lblTempExecucao = new System.Windows.Forms.Label();
-            this.txtTexto = new System.Windows.Forms.TextBox();
-            this.lblTexto = new System.Windows.Forms.Label();
-            this.lblEmpresa = new System.Windows.Forms.Label();
-            this.cmbEmpresa = new System.Windows.Forms.ComboBox();
-            this.pnlFoto = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btnFoto1 = new System.Windows.Forms.Button();
-            this.btnFoto2 = new System.Windows.Forms.Button();
-            this.pctFoto2 = new System.Windows.Forms.PictureBox();
-            this.btnFoto3 = new System.Windows.Forms.Button();
-            this.pctFoto3 = new System.Windows.Forms.PictureBox();
-            this.btnFoto4 = new System.Windows.Forms.Button();
-            this.pctFoto4 = new System.Windows.Forms.PictureBox();
             this.pnlCadServico.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pctFoto1)).BeginInit();
             this.pnlFoto.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pctFoto2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctFoto3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctFoto4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctFoto3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctFoto2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctFoto1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlCadServico
             // 
-            this.pnlCadServico.BackgroundImage = global::kibelezaTi16Joyce.Properties.Resources.cliente;
+            this.pnlCadServico.BackgroundImage = global::kibelezaTi16Joyce.Properties.Resources.servico;
             this.pnlCadServico.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlCadServico.Controls.Add(this.pnlFoto);
             this.pnlCadServico.Controls.Add(this.cmbEmpresa);
@@ -104,16 +104,150 @@
             this.pnlCadServico.Size = new System.Drawing.Size(1200, 600);
             this.pnlCadServico.TabIndex = 3;
             // 
-            // pctFoto1
+            // pnlFoto
             // 
-            this.pctFoto1.Enabled = false;
-            this.pctFoto1.Image = global::kibelezaTi16Joyce.Properties.Resources.semimagem;
-            this.pctFoto1.Location = new System.Drawing.Point(50, 18);
-            this.pctFoto1.Name = "pctFoto1";
-            this.pctFoto1.Size = new System.Drawing.Size(160, 142);
-            this.pctFoto1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctFoto1.TabIndex = 30;
-            this.pctFoto1.TabStop = false;
+            this.pnlFoto.Controls.Add(this.btnFoto4);
+            this.pnlFoto.Controls.Add(this.pctFoto4);
+            this.pnlFoto.Controls.Add(this.btnFoto3);
+            this.pnlFoto.Controls.Add(this.pctFoto3);
+            this.pnlFoto.Controls.Add(this.btnFoto2);
+            this.pnlFoto.Controls.Add(this.pctFoto2);
+            this.pnlFoto.Controls.Add(this.btnFoto1);
+            this.pnlFoto.Controls.Add(this.label4);
+            this.pnlFoto.Controls.Add(this.label2);
+            this.pnlFoto.Controls.Add(this.label1);
+            this.pnlFoto.Controls.Add(this.lblFoto);
+            this.pnlFoto.Controls.Add(this.pctFoto1);
+            this.pnlFoto.Location = new System.Drawing.Point(198, 388);
+            this.pnlFoto.Name = "pnlFoto";
+            this.pnlFoto.Size = new System.Drawing.Size(774, 180);
+            this.pnlFoto.TabIndex = 38;
+            // 
+            // btnFoto4
+            // 
+            this.btnFoto4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(52)))), ((int)(((byte)(96)))));
+            this.btnFoto4.Enabled = false;
+            this.btnFoto4.FlatAppearance.BorderSize = 0;
+            this.btnFoto4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFoto4.Font = new System.Drawing.Font("Britannic Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFoto4.ForeColor = System.Drawing.Color.White;
+            this.btnFoto4.Location = new System.Drawing.Point(714, 125);
+            this.btnFoto4.Name = "btnFoto4";
+            this.btnFoto4.Size = new System.Drawing.Size(35, 35);
+            this.btnFoto4.TabIndex = 41;
+            this.btnFoto4.Text = "+";
+            this.btnFoto4.UseVisualStyleBackColor = false;
+            // 
+            // pctFoto4
+            // 
+            this.pctFoto4.Image = global::kibelezaTi16Joyce.Properties.Resources.semimagem;
+            this.pctFoto4.Location = new System.Drawing.Point(589, 18);
+            this.pctFoto4.Name = "pctFoto4";
+            this.pctFoto4.Size = new System.Drawing.Size(160, 142);
+            this.pctFoto4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctFoto4.TabIndex = 40;
+            this.pctFoto4.TabStop = false;
+            // 
+            // btnFoto3
+            // 
+            this.btnFoto3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(52)))), ((int)(((byte)(96)))));
+            this.btnFoto3.Enabled = false;
+            this.btnFoto3.FlatAppearance.BorderSize = 0;
+            this.btnFoto3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFoto3.Font = new System.Drawing.Font("Britannic Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFoto3.ForeColor = System.Drawing.Color.White;
+            this.btnFoto3.Location = new System.Drawing.Point(536, 125);
+            this.btnFoto3.Name = "btnFoto3";
+            this.btnFoto3.Size = new System.Drawing.Size(35, 35);
+            this.btnFoto3.TabIndex = 39;
+            this.btnFoto3.Text = "+";
+            this.btnFoto3.UseVisualStyleBackColor = false;
+            // 
+            // pctFoto3
+            // 
+            this.pctFoto3.Image = global::kibelezaTi16Joyce.Properties.Resources.semimagem;
+            this.pctFoto3.Location = new System.Drawing.Point(411, 18);
+            this.pctFoto3.Name = "pctFoto3";
+            this.pctFoto3.Size = new System.Drawing.Size(160, 142);
+            this.pctFoto3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctFoto3.TabIndex = 38;
+            this.pctFoto3.TabStop = false;
+            // 
+            // btnFoto2
+            // 
+            this.btnFoto2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(52)))), ((int)(((byte)(96)))));
+            this.btnFoto2.Enabled = false;
+            this.btnFoto2.FlatAppearance.BorderSize = 0;
+            this.btnFoto2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFoto2.Font = new System.Drawing.Font("Britannic Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFoto2.ForeColor = System.Drawing.Color.White;
+            this.btnFoto2.Location = new System.Drawing.Point(356, 125);
+            this.btnFoto2.Name = "btnFoto2";
+            this.btnFoto2.Size = new System.Drawing.Size(35, 35);
+            this.btnFoto2.TabIndex = 37;
+            this.btnFoto2.Text = "+";
+            this.btnFoto2.UseVisualStyleBackColor = false;
+            // 
+            // pctFoto2
+            // 
+            this.pctFoto2.Image = global::kibelezaTi16Joyce.Properties.Resources.semimagem;
+            this.pctFoto2.Location = new System.Drawing.Point(231, 18);
+            this.pctFoto2.Name = "pctFoto2";
+            this.pctFoto2.Size = new System.Drawing.Size(160, 142);
+            this.pctFoto2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctFoto2.TabIndex = 36;
+            this.pctFoto2.TabStop = false;
+            // 
+            // btnFoto1
+            // 
+            this.btnFoto1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(52)))), ((int)(((byte)(96)))));
+            this.btnFoto1.Enabled = false;
+            this.btnFoto1.FlatAppearance.BorderSize = 0;
+            this.btnFoto1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFoto1.Font = new System.Drawing.Font("Britannic Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFoto1.ForeColor = System.Drawing.Color.White;
+            this.btnFoto1.Location = new System.Drawing.Point(175, 125);
+            this.btnFoto1.Name = "btnFoto1";
+            this.btnFoto1.Size = new System.Drawing.Size(35, 35);
+            this.btnFoto1.TabIndex = 35;
+            this.btnFoto1.Text = "+";
+            this.btnFoto1.UseVisualStyleBackColor = false;
+            // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
+            this.label4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label4.Font = new System.Drawing.Font("Britannic Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(33, 170);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(731, 10);
+            this.label4.TabIndex = 34;
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
+            this.label2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label2.Font = new System.Drawing.Font("Britannic Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(764, 10);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(10, 170);
+            this.label2.TabIndex = 33;
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Font = new System.Drawing.Font("Britannic Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(33, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(741, 10);
+            this.label1.TabIndex = 32;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblFoto
             // 
@@ -127,6 +261,103 @@
             this.lblFoto.TabIndex = 29;
             this.lblFoto.Text = "FOTO";
             this.lblFoto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pctFoto1
+            // 
+            this.pctFoto1.Enabled = false;
+            this.pctFoto1.Image = global::kibelezaTi16Joyce.Properties.Resources.semimagem;
+            this.pctFoto1.Location = new System.Drawing.Point(50, 18);
+            this.pctFoto1.Name = "pctFoto1";
+            this.pctFoto1.Size = new System.Drawing.Size(160, 142);
+            this.pctFoto1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctFoto1.TabIndex = 30;
+            this.pctFoto1.TabStop = false;
+            // 
+            // cmbEmpresa
+            // 
+            this.cmbEmpresa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbEmpresa.Enabled = false;
+            this.cmbEmpresa.Font = new System.Drawing.Font("Britannic Bold", 15.25F);
+            this.cmbEmpresa.FormattingEnabled = true;
+            this.cmbEmpresa.Items.AddRange(new object[] {
+            "ATIVA",
+            "INATIVA"});
+            this.cmbEmpresa.Location = new System.Drawing.Point(194, 352);
+            this.cmbEmpresa.Name = "cmbEmpresa";
+            this.cmbEmpresa.Size = new System.Drawing.Size(988, 30);
+            this.cmbEmpresa.TabIndex = 37;
+            // 
+            // lblEmpresa
+            // 
+            this.lblEmpresa.AutoSize = true;
+            this.lblEmpresa.BackColor = System.Drawing.Color.Transparent;
+            this.lblEmpresa.Font = new System.Drawing.Font("Britannic Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmpresa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
+            this.lblEmpresa.Location = new System.Drawing.Point(194, 328);
+            this.lblEmpresa.Name = "lblEmpresa";
+            this.lblEmpresa.Size = new System.Drawing.Size(87, 21);
+            this.lblEmpresa.TabIndex = 36;
+            this.lblEmpresa.Text = "EMPRESA";
+            // 
+            // txtTexto
+            // 
+            this.txtTexto.Enabled = false;
+            this.txtTexto.Font = new System.Drawing.Font("Britannic Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTexto.Location = new System.Drawing.Point(194, 294);
+            this.txtTexto.Name = "txtTexto";
+            this.txtTexto.Size = new System.Drawing.Size(988, 31);
+            this.txtTexto.TabIndex = 35;
+            // 
+            // lblTexto
+            // 
+            this.lblTexto.AutoSize = true;
+            this.lblTexto.BackColor = System.Drawing.Color.Transparent;
+            this.lblTexto.Font = new System.Drawing.Font("Britannic Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTexto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
+            this.lblTexto.Location = new System.Drawing.Point(193, 270);
+            this.lblTexto.Name = "lblTexto";
+            this.lblTexto.Size = new System.Drawing.Size(63, 21);
+            this.lblTexto.TabIndex = 34;
+            this.lblTexto.Text = "TEXTO";
+            // 
+            // cmbTempExecucao
+            // 
+            this.cmbTempExecucao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTempExecucao.Enabled = false;
+            this.cmbTempExecucao.Font = new System.Drawing.Font("Britannic Bold", 15.25F);
+            this.cmbTempExecucao.FormattingEnabled = true;
+            this.cmbTempExecucao.Items.AddRange(new object[] {
+            "0:30",
+            "1:00",
+            "1:30",
+            "2:00",
+            "2:30",
+            "3:00"});
+            this.cmbTempExecucao.Location = new System.Drawing.Point(985, 162);
+            this.cmbTempExecucao.Name = "cmbTempExecucao";
+            this.cmbTempExecucao.Size = new System.Drawing.Size(197, 30);
+            this.cmbTempExecucao.TabIndex = 33;
+            // 
+            // lblTempExecucao
+            // 
+            this.lblTempExecucao.AutoSize = true;
+            this.lblTempExecucao.BackColor = System.Drawing.Color.Transparent;
+            this.lblTempExecucao.Font = new System.Drawing.Font("Britannic Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTempExecucao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
+            this.lblTempExecucao.Location = new System.Drawing.Point(982, 139);
+            this.lblTempExecucao.Name = "lblTempExecucao";
+            this.lblTempExecucao.Size = new System.Drawing.Size(160, 21);
+            this.lblTempExecucao.TabIndex = 32;
+            this.lblTempExecucao.Text = "TEMPO EXECUÇÃO";
+            // 
+            // txtDescricao
+            // 
+            this.txtDescricao.Enabled = false;
+            this.txtDescricao.Font = new System.Drawing.Font("Britannic Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescricao.Location = new System.Drawing.Point(194, 234);
+            this.txtDescricao.Name = "txtDescricao";
+            this.txtDescricao.Size = new System.Drawing.Size(988, 31);
+            this.txtDescricao.TabIndex = 24;
             // 
             // lblDescricao
             // 
@@ -308,237 +539,6 @@
             this.lblCadServico.Text = "CADASTRAR SERVIÇO";
             this.lblCadServico.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtDescricao
-            // 
-            this.txtDescricao.Enabled = false;
-            this.txtDescricao.Font = new System.Drawing.Font("Britannic Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescricao.Location = new System.Drawing.Point(194, 234);
-            this.txtDescricao.Name = "txtDescricao";
-            this.txtDescricao.Size = new System.Drawing.Size(988, 31);
-            this.txtDescricao.TabIndex = 24;
-            // 
-            // cmbTempExecucao
-            // 
-            this.cmbTempExecucao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbTempExecucao.Enabled = false;
-            this.cmbTempExecucao.Font = new System.Drawing.Font("Britannic Bold", 15.25F);
-            this.cmbTempExecucao.FormattingEnabled = true;
-            this.cmbTempExecucao.Items.AddRange(new object[] {
-            "0:30",
-            "1:00",
-            "1:30",
-            "2:00",
-            "2:30",
-            "3:00"});
-            this.cmbTempExecucao.Location = new System.Drawing.Point(985, 162);
-            this.cmbTempExecucao.Name = "cmbTempExecucao";
-            this.cmbTempExecucao.Size = new System.Drawing.Size(197, 30);
-            this.cmbTempExecucao.TabIndex = 33;
-            // 
-            // lblTempExecucao
-            // 
-            this.lblTempExecucao.AutoSize = true;
-            this.lblTempExecucao.BackColor = System.Drawing.Color.Transparent;
-            this.lblTempExecucao.Font = new System.Drawing.Font("Britannic Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTempExecucao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
-            this.lblTempExecucao.Location = new System.Drawing.Point(982, 139);
-            this.lblTempExecucao.Name = "lblTempExecucao";
-            this.lblTempExecucao.Size = new System.Drawing.Size(160, 21);
-            this.lblTempExecucao.TabIndex = 32;
-            this.lblTempExecucao.Text = "TEMPO EXECUÇÃO";
-            // 
-            // txtTexto
-            // 
-            this.txtTexto.Enabled = false;
-            this.txtTexto.Font = new System.Drawing.Font("Britannic Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTexto.Location = new System.Drawing.Point(194, 294);
-            this.txtTexto.Name = "txtTexto";
-            this.txtTexto.Size = new System.Drawing.Size(988, 31);
-            this.txtTexto.TabIndex = 35;
-            // 
-            // lblTexto
-            // 
-            this.lblTexto.AutoSize = true;
-            this.lblTexto.BackColor = System.Drawing.Color.Transparent;
-            this.lblTexto.Font = new System.Drawing.Font("Britannic Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTexto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
-            this.lblTexto.Location = new System.Drawing.Point(193, 270);
-            this.lblTexto.Name = "lblTexto";
-            this.lblTexto.Size = new System.Drawing.Size(63, 21);
-            this.lblTexto.TabIndex = 34;
-            this.lblTexto.Text = "TEXTO";
-            // 
-            // lblEmpresa
-            // 
-            this.lblEmpresa.AutoSize = true;
-            this.lblEmpresa.BackColor = System.Drawing.Color.Transparent;
-            this.lblEmpresa.Font = new System.Drawing.Font("Britannic Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmpresa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
-            this.lblEmpresa.Location = new System.Drawing.Point(194, 328);
-            this.lblEmpresa.Name = "lblEmpresa";
-            this.lblEmpresa.Size = new System.Drawing.Size(87, 21);
-            this.lblEmpresa.TabIndex = 36;
-            this.lblEmpresa.Text = "EMPRESA";
-            // 
-            // cmbEmpresa
-            // 
-            this.cmbEmpresa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbEmpresa.Enabled = false;
-            this.cmbEmpresa.Font = new System.Drawing.Font("Britannic Bold", 15.25F);
-            this.cmbEmpresa.FormattingEnabled = true;
-            this.cmbEmpresa.Items.AddRange(new object[] {
-            "ATIVA",
-            "INATIVA"});
-            this.cmbEmpresa.Location = new System.Drawing.Point(194, 352);
-            this.cmbEmpresa.Name = "cmbEmpresa";
-            this.cmbEmpresa.Size = new System.Drawing.Size(988, 30);
-            this.cmbEmpresa.TabIndex = 37;
-            // 
-            // pnlFoto
-            // 
-            this.pnlFoto.Controls.Add(this.btnFoto4);
-            this.pnlFoto.Controls.Add(this.pctFoto4);
-            this.pnlFoto.Controls.Add(this.btnFoto3);
-            this.pnlFoto.Controls.Add(this.pctFoto3);
-            this.pnlFoto.Controls.Add(this.btnFoto2);
-            this.pnlFoto.Controls.Add(this.pctFoto2);
-            this.pnlFoto.Controls.Add(this.btnFoto1);
-            this.pnlFoto.Controls.Add(this.label4);
-            this.pnlFoto.Controls.Add(this.label2);
-            this.pnlFoto.Controls.Add(this.label1);
-            this.pnlFoto.Controls.Add(this.lblFoto);
-            this.pnlFoto.Controls.Add(this.pctFoto1);
-            this.pnlFoto.Location = new System.Drawing.Point(198, 388);
-            this.pnlFoto.Name = "pnlFoto";
-            this.pnlFoto.Size = new System.Drawing.Size(774, 180);
-            this.pnlFoto.TabIndex = 38;
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Britannic Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(33, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(741, 10);
-            this.label1.TabIndex = 32;
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
-            this.label2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.label2.Font = new System.Drawing.Font("Britannic Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(764, 10);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(10, 170);
-            this.label2.TabIndex = 33;
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label4
-            // 
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
-            this.label4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label4.Font = new System.Drawing.Font("Britannic Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(33, 170);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(731, 10);
-            this.label4.TabIndex = 34;
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnFoto1
-            // 
-            this.btnFoto1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(52)))), ((int)(((byte)(96)))));
-            this.btnFoto1.Enabled = false;
-            this.btnFoto1.FlatAppearance.BorderSize = 0;
-            this.btnFoto1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFoto1.Font = new System.Drawing.Font("Britannic Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFoto1.ForeColor = System.Drawing.Color.White;
-            this.btnFoto1.Location = new System.Drawing.Point(175, 125);
-            this.btnFoto1.Name = "btnFoto1";
-            this.btnFoto1.Size = new System.Drawing.Size(35, 35);
-            this.btnFoto1.TabIndex = 35;
-            this.btnFoto1.Text = "+";
-            this.btnFoto1.UseVisualStyleBackColor = false;
-            // 
-            // btnFoto2
-            // 
-            this.btnFoto2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(52)))), ((int)(((byte)(96)))));
-            this.btnFoto2.Enabled = false;
-            this.btnFoto2.FlatAppearance.BorderSize = 0;
-            this.btnFoto2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFoto2.Font = new System.Drawing.Font("Britannic Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFoto2.ForeColor = System.Drawing.Color.White;
-            this.btnFoto2.Location = new System.Drawing.Point(356, 125);
-            this.btnFoto2.Name = "btnFoto2";
-            this.btnFoto2.Size = new System.Drawing.Size(35, 35);
-            this.btnFoto2.TabIndex = 37;
-            this.btnFoto2.Text = "+";
-            this.btnFoto2.UseVisualStyleBackColor = false;
-            // 
-            // pctFoto2
-            // 
-            this.pctFoto2.Image = global::kibelezaTi16Joyce.Properties.Resources.semimagem;
-            this.pctFoto2.Location = new System.Drawing.Point(231, 18);
-            this.pctFoto2.Name = "pctFoto2";
-            this.pctFoto2.Size = new System.Drawing.Size(160, 142);
-            this.pctFoto2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctFoto2.TabIndex = 36;
-            this.pctFoto2.TabStop = false;
-            // 
-            // btnFoto3
-            // 
-            this.btnFoto3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(52)))), ((int)(((byte)(96)))));
-            this.btnFoto3.Enabled = false;
-            this.btnFoto3.FlatAppearance.BorderSize = 0;
-            this.btnFoto3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFoto3.Font = new System.Drawing.Font("Britannic Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFoto3.ForeColor = System.Drawing.Color.White;
-            this.btnFoto3.Location = new System.Drawing.Point(536, 125);
-            this.btnFoto3.Name = "btnFoto3";
-            this.btnFoto3.Size = new System.Drawing.Size(35, 35);
-            this.btnFoto3.TabIndex = 39;
-            this.btnFoto3.Text = "+";
-            this.btnFoto3.UseVisualStyleBackColor = false;
-            // 
-            // pctFoto3
-            // 
-            this.pctFoto3.Image = global::kibelezaTi16Joyce.Properties.Resources.semimagem;
-            this.pctFoto3.Location = new System.Drawing.Point(411, 18);
-            this.pctFoto3.Name = "pctFoto3";
-            this.pctFoto3.Size = new System.Drawing.Size(160, 142);
-            this.pctFoto3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctFoto3.TabIndex = 38;
-            this.pctFoto3.TabStop = false;
-            // 
-            // btnFoto4
-            // 
-            this.btnFoto4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(52)))), ((int)(((byte)(96)))));
-            this.btnFoto4.Enabled = false;
-            this.btnFoto4.FlatAppearance.BorderSize = 0;
-            this.btnFoto4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFoto4.Font = new System.Drawing.Font("Britannic Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFoto4.ForeColor = System.Drawing.Color.White;
-            this.btnFoto4.Location = new System.Drawing.Point(714, 125);
-            this.btnFoto4.Name = "btnFoto4";
-            this.btnFoto4.Size = new System.Drawing.Size(35, 35);
-            this.btnFoto4.TabIndex = 41;
-            this.btnFoto4.Text = "+";
-            this.btnFoto4.UseVisualStyleBackColor = false;
-            // 
-            // pctFoto4
-            // 
-            this.pctFoto4.Image = global::kibelezaTi16Joyce.Properties.Resources.semimagem;
-            this.pctFoto4.Location = new System.Drawing.Point(589, 18);
-            this.pctFoto4.Name = "pctFoto4";
-            this.pctFoto4.Size = new System.Drawing.Size(160, 142);
-            this.pctFoto4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctFoto4.TabIndex = 40;
-            this.pctFoto4.TabStop = false;
-            // 
             // frmCadServico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -547,6 +547,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1463, 849);
             this.Controls.Add(this.pnlCadServico);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmCadServico";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -555,11 +556,11 @@
             this.Load += new System.EventHandler(this.frmCadServico_Load);
             this.pnlCadServico.ResumeLayout(false);
             this.pnlCadServico.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pctFoto1)).EndInit();
             this.pnlFoto.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pctFoto2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctFoto3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctFoto4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctFoto3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctFoto2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctFoto1)).EndInit();
             this.ResumeLayout(false);
 
         }
