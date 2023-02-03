@@ -11,10 +11,12 @@ namespace kibelezaTi16Joyce
         //Geral
         public static string funcao;
 
-
         //Login
         public static string usuario, senha, nivel;
 
-
+        //Empresa
+        public static int codEmpresa;
+        public static string nomeEmpresa, cnpjCpfEmpresa, razaoSocialEmpresa, emailEmpresa, statusEmpresa;
+        public static DateTime dataCadEmpresa, horarioAtendEmpresa;
     }
 }

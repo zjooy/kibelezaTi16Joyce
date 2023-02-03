@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlEmpresa = new System.Windows.Forms.Panel();
             this.dgvEmpresa = new System.Windows.Forms.DataGridView();
             this.btnExcluir = new System.Windows.Forms.Button();
@@ -61,10 +63,37 @@
             // 
             // dgvEmpresa
             // 
+            this.dgvEmpresa.AllowUserToAddRows = false;
+            this.dgvEmpresa.AllowUserToDeleteRows = false;
+            this.dgvEmpresa.AllowUserToResizeColumns = false;
+            this.dgvEmpresa.AllowUserToResizeRows = false;
+            this.dgvEmpresa.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvEmpresa.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvEmpresa.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvEmpresa.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvEmpresa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Britannic Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(52)))), ((int)(((byte)(96)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvEmpresa.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvEmpresa.EnableHeadersVisualStyles = false;
             this.dgvEmpresa.Location = new System.Drawing.Point(192, 61);
+            this.dgvEmpresa.MultiSelect = false;
             this.dgvEmpresa.Name = "dgvEmpresa";
+            this.dgvEmpresa.ReadOnly = true;
+            this.dgvEmpresa.RowHeadersVisible = false;
+            this.dgvEmpresa.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvEmpresa.Size = new System.Drawing.Size(1002, 478);
             this.dgvEmpresa.TabIndex = 7;
             // 
@@ -151,6 +180,7 @@
             this.cmbStatus.Name = "cmbStatus";
             this.cmbStatus.Size = new System.Drawing.Size(206, 29);
             this.cmbStatus.TabIndex = 3;
+            this.cmbStatus.SelectedIndexChanged += new System.EventHandler(this.cmbStatus_SelectedIndexChanged);
             // 
             // txtEmpresa
             // 
@@ -160,6 +190,7 @@
             this.txtEmpresa.Name = "txtEmpresa";
             this.txtEmpresa.Size = new System.Drawing.Size(520, 29);
             this.txtEmpresa.TabIndex = 2;
+            this.txtEmpresa.TextChanged += new System.EventHandler(this.txtEmpresa_TextChanged);
             // 
             // lblStatus
             // 
