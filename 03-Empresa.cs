@@ -120,12 +120,16 @@ namespace kibelezaTi16Joyce
         {
             pnlEmpresa.Location = new Point(this.Width / 2 - pnlEmpresa.Width / 2, this.Height / 2 - pnlEmpresa.Height / 2);
 
+            variaveis.linhaSelecionada = -1;
+
             CarregarEmpresa();
 
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
+            variaveis.funcao = "CADASTRAR";
+
             new frmCadEmpresa().Show();
             Hide();
         }
@@ -163,6 +167,35 @@ namespace kibelezaTi16Joyce
                 CarregarEmpresaNome();
             }
             
+        }
+
+        private void dgvEmpresa_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            variaveis.linhaSelecionada = int.Parse(e.RowIndex.ToString());
+            if (variaveis.linhaSelecionada >= 0)
+            {
+                variaveis.codEmpresa = Convert.ToInt32(dgvEmpresa[0, variaveis.linhaSelecionada].Value);
+            }
+        }
+
+        private void dgvEmpresa_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            dgvEmpresa.Sort(dgvEmpresa.Columns[1], ListSortDirection.Ascending);
+            dgvEmpresa.ClearSelection();
+        }
+
+        private void btnAlterar_Click(object sender, EventArgs e)
+        {
+            if (variaveis.linhaSelecionada >= 0)
+            {
+                variaveis.funcao = "ALTERAR";
+                new frmCadEmpresa().Show();
+                Hide();
+            }
+            else
+            {
+                MessageBox.Show("Para alterar selecione uma linha!");
+            }
         }
     }
 }

@@ -10,6 +10,7 @@ namespace kibelezaTi16Joyce
     {
         //Geral
         public static string funcao;
+        public static int linhaSelecionada;
 
         //Login
         public static string usuario, senha, nivel;

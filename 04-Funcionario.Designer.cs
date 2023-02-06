@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.pnlFuncionario = new System.Windows.Forms.Panel();
-            this.dgvFuncionario = new System.Windows.Forms.DataGridView();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnAlterar = new System.Windows.Forms.Button();
             this.btnCadastrar = new System.Windows.Forms.Button();
@@ -39,9 +38,10 @@
             this.txtFuncionario = new System.Windows.Forms.TextBox();
             this.lblFuncionario = new System.Windows.Forms.Label();
             this.btnFechar = new System.Windows.Forms.Button();
+            this.dgvFuncionario = new System.Windows.Forms.DataGridView();
             this.pnlFuncionario.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvFuncionario)).BeginInit();
             this.pnlBusca.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFuncionario)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlFuncionario
@@ -58,15 +58,6 @@
             this.pnlFuncionario.Name = "pnlFuncionario";
             this.pnlFuncionario.Size = new System.Drawing.Size(1200, 600);
             this.pnlFuncionario.TabIndex = 0;
-            // 
-            // dgvFuncionario
-            // 
-            this.dgvFuncionario.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
-            this.dgvFuncionario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvFuncionario.Location = new System.Drawing.Point(192, 60);
-            this.dgvFuncionario.Name = "dgvFuncionario";
-            this.dgvFuncionario.Size = new System.Drawing.Size(1002, 478);
-            this.dgvFuncionario.TabIndex = 10;
             // 
             // btnExcluir
             // 
@@ -183,6 +174,15 @@
             this.btnFechar.UseVisualStyleBackColor = false;
             this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
+            // dgvFuncionario
+            // 
+            this.dgvFuncionario.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
+            this.dgvFuncionario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFuncionario.Location = new System.Drawing.Point(192, 61);
+            this.dgvFuncionario.Name = "dgvFuncionario";
+            this.dgvFuncionario.Size = new System.Drawing.Size(1002, 478);
+            this.dgvFuncionario.TabIndex = 17;
+            // 
             // frmFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -199,9 +199,9 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmFuncionario_Load);
             this.pnlFuncionario.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvFuncionario)).EndInit();
             this.pnlBusca.ResumeLayout(false);
             this.pnlBusca.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFuncionario)).EndInit();
             this.ResumeLayout(false);
 
         }

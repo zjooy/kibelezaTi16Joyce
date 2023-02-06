@@ -29,7 +29,16 @@
         private void InitializeComponent()
         {
             this.pnlCadEmpresa = new System.Windows.Forms.Panel();
+            this.btnFechar = new System.Windows.Forms.Button();
+            this.btnSalvar = new System.Windows.Forms.Button();
+            this.btnLimpar = new System.Windows.Forms.Button();
+            this.cmbCargaHoraria = new System.Windows.Forms.ComboBox();
+            this.lblCargaHoraria = new System.Windows.Forms.Label();
+            this.mkdDataDeCadastro = new System.Windows.Forms.MaskedTextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.pnlTelefone = new System.Windows.Forms.Panel();
+            this.bntExcluir = new System.Windows.Forms.Button();
+            this.btnAlterar = new System.Windows.Forms.Button();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.dgvTelefone = new System.Windows.Forms.DataGridView();
             this.cmbStatus = new System.Windows.Forms.ComboBox();
@@ -47,15 +56,6 @@
             this.lblNomeFantasia = new System.Windows.Forms.Label();
             this.lblCodigo = new System.Windows.Forms.Label();
             this.lblCadEmpresa = new System.Windows.Forms.Label();
-            this.btnAlterar = new System.Windows.Forms.Button();
-            this.bntExcluir = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.mkdDataDeCadastro = new System.Windows.Forms.MaskedTextBox();
-            this.lblCargaHoraria = new System.Windows.Forms.Label();
-            this.cmbCargaHoraria = new System.Windows.Forms.ComboBox();
-            this.btnLimpar = new System.Windows.Forms.Button();
-            this.btnSalvar = new System.Windows.Forms.Button();
-            this.btnFechar = new System.Windows.Forms.Button();
             this.pnlCadEmpresa.SuspendLayout();
             this.pnlTelefone.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTelefone)).BeginInit();
@@ -93,6 +93,102 @@
             this.pnlCadEmpresa.Size = new System.Drawing.Size(1200, 600);
             this.pnlCadEmpresa.TabIndex = 0;
             // 
+            // btnFechar
+            // 
+            this.btnFechar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
+            this.btnFechar.BackgroundImage = global::kibelezaTi16Joyce.Properties.Resources.fechar;
+            this.btnFechar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFechar.FlatAppearance.BorderSize = 0;
+            this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFechar.Location = new System.Drawing.Point(1146, 5);
+            this.btnFechar.Name = "btnFechar";
+            this.btnFechar.Size = new System.Drawing.Size(45, 45);
+            this.btnFechar.TabIndex = 22;
+            this.btnFechar.UseVisualStyleBackColor = false;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
+            // 
+            // btnSalvar
+            // 
+            this.btnSalvar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(52)))), ((int)(((byte)(96)))));
+            this.btnSalvar.Enabled = false;
+            this.btnSalvar.FlatAppearance.BorderSize = 0;
+            this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalvar.Font = new System.Drawing.Font("Britannic Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvar.ForeColor = System.Drawing.Color.White;
+            this.btnSalvar.Location = new System.Drawing.Point(986, 496);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(199, 45);
+            this.btnSalvar.TabIndex = 21;
+            this.btnSalvar.Text = "SALVAR";
+            this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            // 
+            // btnLimpar
+            // 
+            this.btnLimpar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(52)))), ((int)(((byte)(96)))));
+            this.btnLimpar.FlatAppearance.BorderSize = 0;
+            this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpar.Font = new System.Drawing.Font("Britannic Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpar.ForeColor = System.Drawing.Color.White;
+            this.btnLimpar.Location = new System.Drawing.Point(986, 434);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(199, 45);
+            this.btnLimpar.TabIndex = 20;
+            this.btnLimpar.Text = "LIMPAR";
+            this.btnLimpar.UseVisualStyleBackColor = false;
+            // 
+            // cmbCargaHoraria
+            // 
+            this.cmbCargaHoraria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCargaHoraria.Enabled = false;
+            this.cmbCargaHoraria.Font = new System.Drawing.Font("Britannic Bold", 15.25F);
+            this.cmbCargaHoraria.FormattingEnabled = true;
+            this.cmbCargaHoraria.Items.AddRange(new object[] {
+            "04:00",
+            "06:00",
+            "08:00",
+            "10:00",
+            "12:00"});
+            this.cmbCargaHoraria.Location = new System.Drawing.Point(986, 385);
+            this.cmbCargaHoraria.Name = "cmbCargaHoraria";
+            this.cmbCargaHoraria.Size = new System.Drawing.Size(199, 30);
+            this.cmbCargaHoraria.TabIndex = 19;
+            // 
+            // lblCargaHoraria
+            // 
+            this.lblCargaHoraria.AutoSize = true;
+            this.lblCargaHoraria.BackColor = System.Drawing.Color.Transparent;
+            this.lblCargaHoraria.Font = new System.Drawing.Font("Britannic Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCargaHoraria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
+            this.lblCargaHoraria.Location = new System.Drawing.Point(986, 361);
+            this.lblCargaHoraria.Name = "lblCargaHoraria";
+            this.lblCargaHoraria.Size = new System.Drawing.Size(146, 21);
+            this.lblCargaHoraria.TabIndex = 18;
+            this.lblCargaHoraria.Text = "CARGA HORÁRIA";
+            // 
+            // mkdDataDeCadastro
+            // 
+            this.mkdDataDeCadastro.Enabled = false;
+            this.mkdDataDeCadastro.Font = new System.Drawing.Font("Britannic Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mkdDataDeCadastro.Location = new System.Drawing.Point(984, 313);
+            this.mkdDataDeCadastro.Mask = "00/00/0000";
+            this.mkdDataDeCadastro.Name = "mkdDataDeCadastro";
+            this.mkdDataDeCadastro.Size = new System.Drawing.Size(201, 31);
+            this.mkdDataDeCadastro.TabIndex = 17;
+            this.mkdDataDeCadastro.ValidatingType = typeof(System.DateTime);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Britannic Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
+            this.label3.Location = new System.Drawing.Point(982, 289);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(173, 21);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "DATA DE CADASTRO";
+            // 
             // pnlTelefone
             // 
             this.pnlTelefone.BackgroundImage = global::kibelezaTi16Joyce.Properties.Resources.telefone;
@@ -105,6 +201,34 @@
             this.pnlTelefone.Name = "pnlTelefone";
             this.pnlTelefone.Size = new System.Drawing.Size(670, 316);
             this.pnlTelefone.TabIndex = 15;
+            // 
+            // bntExcluir
+            // 
+            this.bntExcluir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(52)))), ((int)(((byte)(96)))));
+            this.bntExcluir.FlatAppearance.BorderSize = 0;
+            this.bntExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bntExcluir.Font = new System.Drawing.Font("Britannic Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bntExcluir.ForeColor = System.Drawing.Color.White;
+            this.bntExcluir.Location = new System.Drawing.Point(523, 267);
+            this.bntExcluir.Name = "bntExcluir";
+            this.bntExcluir.Size = new System.Drawing.Size(140, 46);
+            this.bntExcluir.TabIndex = 13;
+            this.bntExcluir.Text = "EXCLUIR";
+            this.bntExcluir.UseVisualStyleBackColor = false;
+            // 
+            // btnAlterar
+            // 
+            this.btnAlterar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(52)))), ((int)(((byte)(96)))));
+            this.btnAlterar.FlatAppearance.BorderSize = 0;
+            this.btnAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAlterar.Font = new System.Drawing.Font("Britannic Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAlterar.ForeColor = System.Drawing.Color.White;
+            this.btnAlterar.Location = new System.Drawing.Point(324, 268);
+            this.btnAlterar.Name = "btnAlterar";
+            this.btnAlterar.Size = new System.Drawing.Size(140, 46);
+            this.btnAlterar.TabIndex = 12;
+            this.btnAlterar.Text = "ALTERAR";
+            this.btnAlterar.UseVisualStyleBackColor = false;
             // 
             // btnCadastrar
             // 
@@ -301,129 +425,6 @@
             this.lblCadEmpresa.TabIndex = 0;
             this.lblCadEmpresa.Text = "CADASTRAR EMPRESA";
             this.lblCadEmpresa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnAlterar
-            // 
-            this.btnAlterar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(52)))), ((int)(((byte)(96)))));
-            this.btnAlterar.FlatAppearance.BorderSize = 0;
-            this.btnAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAlterar.Font = new System.Drawing.Font("Britannic Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAlterar.ForeColor = System.Drawing.Color.White;
-            this.btnAlterar.Location = new System.Drawing.Point(324, 268);
-            this.btnAlterar.Name = "btnAlterar";
-            this.btnAlterar.Size = new System.Drawing.Size(140, 46);
-            this.btnAlterar.TabIndex = 12;
-            this.btnAlterar.Text = "ALTERAR";
-            this.btnAlterar.UseVisualStyleBackColor = false;
-            // 
-            // bntExcluir
-            // 
-            this.bntExcluir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(52)))), ((int)(((byte)(96)))));
-            this.bntExcluir.FlatAppearance.BorderSize = 0;
-            this.bntExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bntExcluir.Font = new System.Drawing.Font("Britannic Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bntExcluir.ForeColor = System.Drawing.Color.White;
-            this.bntExcluir.Location = new System.Drawing.Point(523, 267);
-            this.bntExcluir.Name = "bntExcluir";
-            this.bntExcluir.Size = new System.Drawing.Size(140, 46);
-            this.bntExcluir.TabIndex = 13;
-            this.bntExcluir.Text = "EXCLUIR";
-            this.bntExcluir.UseVisualStyleBackColor = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Britannic Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
-            this.label3.Location = new System.Drawing.Point(982, 289);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(173, 21);
-            this.label3.TabIndex = 16;
-            this.label3.Text = "DATA DE CADASTRO";
-            // 
-            // mkdDataDeCadastro
-            // 
-            this.mkdDataDeCadastro.Enabled = false;
-            this.mkdDataDeCadastro.Font = new System.Drawing.Font("Britannic Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mkdDataDeCadastro.Location = new System.Drawing.Point(984, 313);
-            this.mkdDataDeCadastro.Mask = "00/00/0000";
-            this.mkdDataDeCadastro.Name = "mkdDataDeCadastro";
-            this.mkdDataDeCadastro.Size = new System.Drawing.Size(201, 31);
-            this.mkdDataDeCadastro.TabIndex = 17;
-            this.mkdDataDeCadastro.ValidatingType = typeof(System.DateTime);
-            // 
-            // lblCargaHoraria
-            // 
-            this.lblCargaHoraria.AutoSize = true;
-            this.lblCargaHoraria.BackColor = System.Drawing.Color.Transparent;
-            this.lblCargaHoraria.Font = new System.Drawing.Font("Britannic Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCargaHoraria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
-            this.lblCargaHoraria.Location = new System.Drawing.Point(986, 361);
-            this.lblCargaHoraria.Name = "lblCargaHoraria";
-            this.lblCargaHoraria.Size = new System.Drawing.Size(146, 21);
-            this.lblCargaHoraria.TabIndex = 18;
-            this.lblCargaHoraria.Text = "CARGA HORÁRIA";
-            // 
-            // cmbCargaHoraria
-            // 
-            this.cmbCargaHoraria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbCargaHoraria.Enabled = false;
-            this.cmbCargaHoraria.Font = new System.Drawing.Font("Britannic Bold", 15.25F);
-            this.cmbCargaHoraria.FormattingEnabled = true;
-            this.cmbCargaHoraria.Items.AddRange(new object[] {
-            "04:00",
-            "06:00",
-            "08:00",
-            "10:00",
-            "12:00"});
-            this.cmbCargaHoraria.Location = new System.Drawing.Point(986, 385);
-            this.cmbCargaHoraria.Name = "cmbCargaHoraria";
-            this.cmbCargaHoraria.Size = new System.Drawing.Size(199, 30);
-            this.cmbCargaHoraria.TabIndex = 19;
-            // 
-            // btnLimpar
-            // 
-            this.btnLimpar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(52)))), ((int)(((byte)(96)))));
-            this.btnLimpar.FlatAppearance.BorderSize = 0;
-            this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLimpar.Font = new System.Drawing.Font("Britannic Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpar.ForeColor = System.Drawing.Color.White;
-            this.btnLimpar.Location = new System.Drawing.Point(986, 434);
-            this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(199, 45);
-            this.btnLimpar.TabIndex = 20;
-            this.btnLimpar.Text = "LIMPAR";
-            this.btnLimpar.UseVisualStyleBackColor = false;
-            // 
-            // btnSalvar
-            // 
-            this.btnSalvar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(162)))), ((int)(((byte)(52)))), ((int)(((byte)(96)))));
-            this.btnSalvar.Enabled = false;
-            this.btnSalvar.FlatAppearance.BorderSize = 0;
-            this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalvar.Font = new System.Drawing.Font("Britannic Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalvar.ForeColor = System.Drawing.Color.White;
-            this.btnSalvar.Location = new System.Drawing.Point(986, 496);
-            this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(199, 45);
-            this.btnSalvar.TabIndex = 21;
-            this.btnSalvar.Text = "SALVAR";
-            this.btnSalvar.UseVisualStyleBackColor = false;
-            // 
-            // btnFechar
-            // 
-            this.btnFechar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
-            this.btnFechar.BackgroundImage = global::kibelezaTi16Joyce.Properties.Resources.fechar;
-            this.btnFechar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFechar.FlatAppearance.BorderSize = 0;
-            this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFechar.Location = new System.Drawing.Point(1146, 5);
-            this.btnFechar.Name = "btnFechar";
-            this.btnFechar.Size = new System.Drawing.Size(45, 45);
-            this.btnFechar.TabIndex = 22;
-            this.btnFechar.UseVisualStyleBackColor = false;
-            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
             // frmCadEmpresa
             // 
