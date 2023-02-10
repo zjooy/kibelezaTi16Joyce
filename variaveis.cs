@@ -19,5 +19,9 @@ namespace kibelezaTi16Joyce
         public static int codEmpresa;
         public static string nomeEmpresa, cnpjCpfEmpresa, razaoSocialEmpresa, emailEmpresa, statusEmpresa;
         public static DateTime dataCadEmpresa, horarioAtendEmpresa;
+
+        //Fone empresa
+        public static int codFoneEmpresa;
+        public static string numeroFoneEmpresa, operadoraEmpresa, descricaoEmpresa;
     }
 }
