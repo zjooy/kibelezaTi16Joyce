@@ -23,5 +23,19 @@ namespace kibelezaTi16Joyce
         //Fone empresa
         public static int codFoneEmpresa;
         public static string numeroFoneEmpresa, operadoraEmpresa, descricaoEmpresa;
+
+        //Cliente
+        public static int codCliente;
+        public static string nomeCliente, emailCliente, senhaCliente, statusCliente, fotoCliente, atFotoCliente, caminhoFotoCliente;
+        public static DateTime dataCadCliente;
+
+        //FONE CLIENTE
+        public static int codFoneCliente;
+        public static string numeroFoneCliente, operadoraCliente, descricaoCliente;
+
+        //FOTOS FTP
+        public static string enderecoServidorFtp = "ftp://127.0.0.1/admin/";
+        public static string usuarioFto = "ti16";
+        public static string senhaFtp = "1234";
     }
 }

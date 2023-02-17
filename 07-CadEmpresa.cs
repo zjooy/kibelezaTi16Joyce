@@ -242,6 +242,8 @@ namespace kibelezaTi16Joyce
 
             cmbDocumento.Text = "CNPJ";
 
+            CarregarTelefones();
+
             if (variaveis.funcao == "ALTERAR")
             {
                 CarregarDadosEmpresa();
@@ -491,7 +493,7 @@ namespace kibelezaTi16Joyce
         private void btnAlterar_Click(object sender, EventArgs e)
         {
             variaveis.funcao = "ALTERAR FONE";
-            pnlCadEmpresa.Visible = true;
+            pnlCadFone.Visible = true;
 
             CarregarFoneEmpesa();
 

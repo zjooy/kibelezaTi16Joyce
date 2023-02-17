@@ -54,7 +54,7 @@
             this.pnlCliente.Controls.Add(this.btnCadastrar);
             this.pnlCliente.Controls.Add(this.pnlBusca);
             this.pnlCliente.Controls.Add(this.btnFechar);
-            this.pnlCliente.Location = new System.Drawing.Point(102, 76);
+            this.pnlCliente.Location = new System.Drawing.Point(12, 78);
             this.pnlCliente.Name = "pnlCliente";
             this.pnlCliente.Size = new System.Drawing.Size(1200, 600);
             this.pnlCliente.TabIndex = 0;
@@ -67,6 +67,8 @@
             this.dgvCliente.Name = "dgvCliente";
             this.dgvCliente.Size = new System.Drawing.Size(1002, 478);
             this.dgvCliente.TabIndex = 16;
+            this.dgvCliente.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCliente_CellClick);
+            this.dgvCliente.ColumnHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvCliente_ColumnHeaderMouseClick);
             // 
             // btnExcluir
             // 
@@ -81,6 +83,7 @@
             this.btnExcluir.TabIndex = 15;
             this.btnExcluir.Text = "EXCLUIR";
             this.btnExcluir.UseVisualStyleBackColor = false;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnAlterar
             // 
@@ -95,6 +98,7 @@
             this.btnAlterar.TabIndex = 14;
             this.btnAlterar.Text = "ALTERAR";
             this.btnAlterar.UseVisualStyleBackColor = false;
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
             // btnCadastrar
             // 
@@ -136,6 +140,7 @@
             this.cmbStatus.Name = "cmbStatus";
             this.cmbStatus.Size = new System.Drawing.Size(206, 29);
             this.cmbStatus.TabIndex = 4;
+            this.cmbStatus.SelectedIndexChanged += new System.EventHandler(this.cmbStatus_SelectedIndexChanged);
             // 
             // txtCliente
             // 
@@ -145,6 +150,7 @@
             this.txtCliente.Name = "txtCliente";
             this.txtCliente.Size = new System.Drawing.Size(547, 29);
             this.txtCliente.TabIndex = 3;
+            this.txtCliente.TextChanged += new System.EventHandler(this.txtCliente_TextChanged);
             // 
             // lblStatus
             // 
@@ -189,7 +195,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::kibelezaTi16Joyce.Properties.Resources.fundo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1410, 797);
+            this.ClientSize = new System.Drawing.Size(1335, 797);
             this.Controls.Add(this.pnlCliente);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

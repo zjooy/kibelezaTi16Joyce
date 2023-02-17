@@ -29,27 +29,27 @@
         private void InitializeComponent()
         {
             this.pnlReserva = new System.Windows.Forms.Panel();
+            this.lblDataReserva = new System.Windows.Forms.Label();
+            this.meuCalendario1 = new kibelezaTi16Joyce.MeuCalendario();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pnlInfoReserva = new System.Windows.Forms.Panel();
+            this.cmbServico = new System.Windows.Forms.ComboBox();
+            this.lblStatus = new System.Windows.Forms.Label();
+            this.cmbCliente = new System.Windows.Forms.ComboBox();
+            this.lblCliente = new System.Windows.Forms.Label();
+            this.cmbFuncionario = new System.Windows.Forms.ComboBox();
+            this.lblFuncionario = new System.Windows.Forms.Label();
             this.cmbTempExecucao = new System.Windows.Forms.ComboBox();
             this.lblHorario = new System.Windows.Forms.Label();
             this.btnFechar = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
-            this.cmbFuncionario = new System.Windows.Forms.ComboBox();
-            this.lblFuncionario = new System.Windows.Forms.Label();
             this.txtObservacao = new System.Windows.Forms.TextBox();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.lblObservacao = new System.Windows.Forms.Label();
             this.lblCodigo = new System.Windows.Forms.Label();
             this.lblReserva = new System.Windows.Forms.Label();
-            this.pnlInfoReserva = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.lblCliente = new System.Windows.Forms.Label();
-            this.lblStatus = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.meuCalendario1 = new kibelezaTi16Joyce.MeuCalendario();
-            this.lblDataReserva = new System.Windows.Forms.Label();
             this.pnlReserva.SuspendLayout();
             this.pnlInfoReserva.SuspendLayout();
             this.SuspendLayout();
@@ -78,6 +78,149 @@
             this.pnlReserva.Name = "pnlReserva";
             this.pnlReserva.Size = new System.Drawing.Size(1200, 600);
             this.pnlReserva.TabIndex = 4;
+            // 
+            // lblDataReserva
+            // 
+            this.lblDataReserva.AutoSize = true;
+            this.lblDataReserva.BackColor = System.Drawing.Color.Transparent;
+            this.lblDataReserva.Font = new System.Drawing.Font("Britannic Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDataReserva.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
+            this.lblDataReserva.Location = new System.Drawing.Point(664, 139);
+            this.lblDataReserva.Name = "lblDataReserva";
+            this.lblDataReserva.Size = new System.Drawing.Size(160, 21);
+            this.lblDataReserva.TabIndex = 39;
+            this.lblDataReserva.Text = "DATA DA RESERVA";
+            // 
+            // meuCalendario1
+            // 
+            this.meuCalendario1.Font = new System.Drawing.Font("Britannic Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.meuCalendario1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
+            this.meuCalendario1.Location = new System.Drawing.Point(668, 162);
+            this.meuCalendario1.Name = "meuCalendario1";
+            this.meuCalendario1.TabIndex = 38;
+            this.meuCalendario1.TitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
+            this.meuCalendario1.TitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(204)))), ((int)(((byte)(209)))));
+            this.meuCalendario1.TrailingForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(204)))), ((int)(((byte)(209)))));
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox3.Enabled = false;
+            this.comboBox3.Font = new System.Drawing.Font("Britannic Bold", 15.25F);
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "AGUARDANDO",
+            "APROVADA",
+            "CANCELADA",
+            "FINALIZADA"});
+            this.comboBox3.Location = new System.Drawing.Point(214, 422);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(442, 30);
+            this.comboBox3.TabIndex = 37;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Britannic Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
+            this.label1.Location = new System.Drawing.Point(210, 398);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(72, 21);
+            this.label1.TabIndex = 35;
+            this.label1.Text = "STATUS";
+            // 
+            // pnlInfoReserva
+            // 
+            this.pnlInfoReserva.BackColor = System.Drawing.Color.Transparent;
+            this.pnlInfoReserva.Controls.Add(this.cmbServico);
+            this.pnlInfoReserva.Controls.Add(this.lblStatus);
+            this.pnlInfoReserva.Controls.Add(this.cmbCliente);
+            this.pnlInfoReserva.Controls.Add(this.lblCliente);
+            this.pnlInfoReserva.Controls.Add(this.cmbFuncionario);
+            this.pnlInfoReserva.Controls.Add(this.lblFuncionario);
+            this.pnlInfoReserva.Location = new System.Drawing.Point(196, 139);
+            this.pnlInfoReserva.Name = "pnlInfoReserva";
+            this.pnlInfoReserva.Size = new System.Drawing.Size(460, 240);
+            this.pnlInfoReserva.TabIndex = 34;
+            // 
+            // cmbServico
+            // 
+            this.cmbServico.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbServico.Enabled = false;
+            this.cmbServico.Font = new System.Drawing.Font("Britannic Bold", 15.25F);
+            this.cmbServico.FormattingEnabled = true;
+            this.cmbServico.Items.AddRange(new object[] {
+            "ATIVA",
+            "INATIVA"});
+            this.cmbServico.Location = new System.Drawing.Point(17, 194);
+            this.cmbServico.Name = "cmbServico";
+            this.cmbServico.Size = new System.Drawing.Size(422, 30);
+            this.cmbServico.TabIndex = 18;
+            // 
+            // lblStatus
+            // 
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.BackColor = System.Drawing.Color.Transparent;
+            this.lblStatus.Font = new System.Drawing.Font("Britannic Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
+            this.lblStatus.Location = new System.Drawing.Point(14, 171);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(81, 21);
+            this.lblStatus.TabIndex = 17;
+            this.lblStatus.Text = "SERVIÇO";
+            // 
+            // cmbCliente
+            // 
+            this.cmbCliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCliente.Enabled = false;
+            this.cmbCliente.Font = new System.Drawing.Font("Britannic Bold", 15.25F);
+            this.cmbCliente.FormattingEnabled = true;
+            this.cmbCliente.Items.AddRange(new object[] {
+            "ATIVA",
+            "INATIVA"});
+            this.cmbCliente.Location = new System.Drawing.Point(18, 116);
+            this.cmbCliente.Name = "cmbCliente";
+            this.cmbCliente.Size = new System.Drawing.Size(422, 30);
+            this.cmbCliente.TabIndex = 16;
+            // 
+            // lblCliente
+            // 
+            this.lblCliente.AutoSize = true;
+            this.lblCliente.BackColor = System.Drawing.Color.Transparent;
+            this.lblCliente.Font = new System.Drawing.Font("Britannic Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
+            this.lblCliente.Location = new System.Drawing.Point(14, 95);
+            this.lblCliente.Name = "lblCliente";
+            this.lblCliente.Size = new System.Drawing.Size(78, 21);
+            this.lblCliente.TabIndex = 15;
+            this.lblCliente.Text = "CLIENTE";
+            // 
+            // cmbFuncionario
+            // 
+            this.cmbFuncionario.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbFuncionario.Enabled = false;
+            this.cmbFuncionario.Font = new System.Drawing.Font("Britannic Bold", 15.25F);
+            this.cmbFuncionario.FormattingEnabled = true;
+            this.cmbFuncionario.Items.AddRange(new object[] {
+            "ATIVA",
+            "INATIVA"});
+            this.cmbFuncionario.Location = new System.Drawing.Point(18, 39);
+            this.cmbFuncionario.Name = "cmbFuncionario";
+            this.cmbFuncionario.Size = new System.Drawing.Size(422, 30);
+            this.cmbFuncionario.TabIndex = 14;
+            // 
+            // lblFuncionario
+            // 
+            this.lblFuncionario.AutoSize = true;
+            this.lblFuncionario.BackColor = System.Drawing.Color.Transparent;
+            this.lblFuncionario.Font = new System.Drawing.Font("Britannic Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFuncionario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
+            this.lblFuncionario.Location = new System.Drawing.Point(14, 18);
+            this.lblFuncionario.Name = "lblFuncionario";
+            this.lblFuncionario.Size = new System.Drawing.Size(122, 21);
+            this.lblFuncionario.TabIndex = 13;
+            this.lblFuncionario.Text = "FUNCIONÁRIO";
             // 
             // cmbTempExecucao
             // 
@@ -151,32 +294,6 @@
             this.btnLimpar.Text = "LIMPAR";
             this.btnLimpar.UseVisualStyleBackColor = false;
             // 
-            // cmbFuncionario
-            // 
-            this.cmbFuncionario.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbFuncionario.Enabled = false;
-            this.cmbFuncionario.Font = new System.Drawing.Font("Britannic Bold", 15.25F);
-            this.cmbFuncionario.FormattingEnabled = true;
-            this.cmbFuncionario.Items.AddRange(new object[] {
-            "ATIVA",
-            "INATIVA"});
-            this.cmbFuncionario.Location = new System.Drawing.Point(18, 39);
-            this.cmbFuncionario.Name = "cmbFuncionario";
-            this.cmbFuncionario.Size = new System.Drawing.Size(422, 30);
-            this.cmbFuncionario.TabIndex = 14;
-            // 
-            // lblFuncionario
-            // 
-            this.lblFuncionario.AutoSize = true;
-            this.lblFuncionario.BackColor = System.Drawing.Color.Transparent;
-            this.lblFuncionario.Font = new System.Drawing.Font("Britannic Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFuncionario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
-            this.lblFuncionario.Location = new System.Drawing.Point(14, 18);
-            this.lblFuncionario.Name = "lblFuncionario";
-            this.lblFuncionario.Size = new System.Drawing.Size(122, 21);
-            this.lblFuncionario.TabIndex = 13;
-            this.lblFuncionario.Text = "FUNCIONÁRIO";
-            // 
             // txtObservacao
             // 
             this.txtObservacao.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
@@ -231,123 +348,6 @@
             this.lblReserva.Text = "RESERVA";
             this.lblReserva.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pnlInfoReserva
-            // 
-            this.pnlInfoReserva.BackColor = System.Drawing.Color.Transparent;
-            this.pnlInfoReserva.Controls.Add(this.comboBox2);
-            this.pnlInfoReserva.Controls.Add(this.lblStatus);
-            this.pnlInfoReserva.Controls.Add(this.comboBox1);
-            this.pnlInfoReserva.Controls.Add(this.lblCliente);
-            this.pnlInfoReserva.Controls.Add(this.cmbFuncionario);
-            this.pnlInfoReserva.Controls.Add(this.lblFuncionario);
-            this.pnlInfoReserva.Location = new System.Drawing.Point(196, 139);
-            this.pnlInfoReserva.Name = "pnlInfoReserva";
-            this.pnlInfoReserva.Size = new System.Drawing.Size(460, 240);
-            this.pnlInfoReserva.TabIndex = 34;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.Enabled = false;
-            this.comboBox1.Font = new System.Drawing.Font("Britannic Bold", 15.25F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "ATIVA",
-            "INATIVA"});
-            this.comboBox1.Location = new System.Drawing.Point(18, 116);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(422, 30);
-            this.comboBox1.TabIndex = 16;
-            // 
-            // lblCliente
-            // 
-            this.lblCliente.AutoSize = true;
-            this.lblCliente.BackColor = System.Drawing.Color.Transparent;
-            this.lblCliente.Font = new System.Drawing.Font("Britannic Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
-            this.lblCliente.Location = new System.Drawing.Point(14, 95);
-            this.lblCliente.Name = "lblCliente";
-            this.lblCliente.Size = new System.Drawing.Size(78, 21);
-            this.lblCliente.TabIndex = 15;
-            this.lblCliente.Text = "CLIENTE";
-            // 
-            // lblStatus
-            // 
-            this.lblStatus.AutoSize = true;
-            this.lblStatus.BackColor = System.Drawing.Color.Transparent;
-            this.lblStatus.Font = new System.Drawing.Font("Britannic Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
-            this.lblStatus.Location = new System.Drawing.Point(14, 171);
-            this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(81, 21);
-            this.lblStatus.TabIndex = 17;
-            this.lblStatus.Text = "SERVIÇO";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Britannic Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
-            this.label1.Location = new System.Drawing.Point(210, 398);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 21);
-            this.label1.TabIndex = 35;
-            this.label1.Text = "STATUS";
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.Enabled = false;
-            this.comboBox3.Font = new System.Drawing.Font("Britannic Bold", 15.25F);
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "AGUARDANDO",
-            "APROVADA",
-            "CANCELADA",
-            "FINALIZADA"});
-            this.comboBox3.Location = new System.Drawing.Point(214, 422);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(442, 30);
-            this.comboBox3.TabIndex = 37;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.Enabled = false;
-            this.comboBox2.Font = new System.Drawing.Font("Britannic Bold", 15.25F);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "ATIVA",
-            "INATIVA"});
-            this.comboBox2.Location = new System.Drawing.Point(17, 194);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(422, 30);
-            this.comboBox2.TabIndex = 18;
-            // 
-            // meuCalendario1
-            // 
-            this.meuCalendario1.Font = new System.Drawing.Font("Britannic Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.meuCalendario1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
-            this.meuCalendario1.Location = new System.Drawing.Point(668, 162);
-            this.meuCalendario1.Name = "meuCalendario1";
-            this.meuCalendario1.TabIndex = 38;
-            this.meuCalendario1.TitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
-            this.meuCalendario1.TitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(204)))), ((int)(((byte)(209)))));
-            this.meuCalendario1.TrailingForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(204)))), ((int)(((byte)(209)))));
-            // 
-            // lblDataReserva
-            // 
-            this.lblDataReserva.AutoSize = true;
-            this.lblDataReserva.BackColor = System.Drawing.Color.Transparent;
-            this.lblDataReserva.Font = new System.Drawing.Font("Britannic Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDataReserva.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
-            this.lblDataReserva.Location = new System.Drawing.Point(664, 139);
-            this.lblDataReserva.Name = "lblDataReserva";
-            this.lblDataReserva.Size = new System.Drawing.Size(160, 21);
-            this.lblDataReserva.TabIndex = 39;
-            this.lblDataReserva.Text = "DATA DA RESERVA";
-            // 
             // frmReserva
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -375,7 +375,7 @@
 
         private System.Windows.Forms.Panel pnlReserva;
         private System.Windows.Forms.Panel pnlInfoReserva;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbCliente;
         private System.Windows.Forms.Label lblCliente;
         private System.Windows.Forms.ComboBox cmbFuncionario;
         private System.Windows.Forms.Label lblFuncionario;
@@ -392,7 +392,7 @@
         private System.Windows.Forms.Label lblStatus;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cmbServico;
         private System.Windows.Forms.Label lblDataReserva;
         private MeuCalendario meuCalendario1;
     }
