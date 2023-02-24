@@ -35,7 +35,7 @@ namespace kibelezaTi16Joyce
 
         //FOTOS FTP
         public static string enderecoServidorFtp = "ftp://127.0.0.1/admin/";
-        public static string usuarioFto = "ti16";
+        public static string usuarioFtp = "ti16";
         public static string senhaFtp = "1234";
     }
 }
