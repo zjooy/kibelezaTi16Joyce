@@ -523,5 +523,7 @@ namespace kibelezaTi16Joyce
                 variaveis.codFoneEmpresa = Convert.ToInt32(dgvTelefone[0, variaveis.linhaSelecionada].Value);
             }
         }
+
+        
     }
 }

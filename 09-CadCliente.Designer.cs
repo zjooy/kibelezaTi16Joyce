@@ -116,6 +116,7 @@
             this.btnFoto.TabIndex = 31;
             this.btnFoto.Text = "+";
             this.btnFoto.UseVisualStyleBackColor = false;
+            this.btnFoto.Click += new System.EventHandler(this.btnFoto_Click);
             // 
             // pctFoto
             // 
@@ -147,6 +148,7 @@
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(255, 31);
             this.txtSenha.TabIndex = 24;
+            this.txtSenha.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSenha_KeyPress);
             // 
             // lblSenha
             // 
@@ -203,6 +205,7 @@
             this.btnLimpar.TabIndex = 20;
             this.btnLimpar.Text = "LIMPAR";
             this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // mkdDataDeCadastro
             // 
@@ -254,6 +257,7 @@
             this.bntExcluir.TabIndex = 13;
             this.bntExcluir.Text = "EXCLUIR";
             this.bntExcluir.UseVisualStyleBackColor = false;
+            this.bntExcluir.Click += new System.EventHandler(this.bntExcluir_Click);
             // 
             // btnAlterar
             // 
@@ -268,6 +272,7 @@
             this.btnAlterar.TabIndex = 12;
             this.btnAlterar.Text = "ALTERAR";
             this.btnAlterar.UseVisualStyleBackColor = false;
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
             // btnCadastrar
             // 
@@ -292,6 +297,8 @@
             this.dgvTelefone.Name = "dgvTelefone";
             this.dgvTelefone.Size = new System.Drawing.Size(553, 264);
             this.dgvTelefone.TabIndex = 0;
+            this.dgvTelefone.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTelefone_CellClick);
+            this.dgvTelefone.ColumnHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvTelefone_ColumnHeaderMouseClick);
             // 
             // cmbStatus
             // 
@@ -306,6 +313,7 @@
             this.cmbStatus.Name = "cmbStatus";
             this.cmbStatus.Size = new System.Drawing.Size(253, 30);
             this.cmbStatus.TabIndex = 14;
+            this.cmbStatus.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmbStatus_KeyPress);
             // 
             // lblStatus
             // 
@@ -340,6 +348,7 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(715, 31);
             this.txtEmail.TabIndex = 8;
+            this.txtEmail.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEmail_KeyPress);
             // 
             // txtNomeCliente
             // 
@@ -349,6 +358,7 @@
             this.txtNomeCliente.Name = "txtNomeCliente";
             this.txtNomeCliente.Size = new System.Drawing.Size(836, 31);
             this.txtNomeCliente.TabIndex = 4;
+            this.txtNomeCliente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNomeCliente_KeyPress);
             // 
             // txtCodigo
             // 
@@ -431,6 +441,7 @@
             this.btnSalvarFone.TabIndex = 27;
             this.btnSalvarFone.Text = "SALVAR";
             this.btnSalvarFone.UseVisualStyleBackColor = false;
+            this.btnSalvarFone.Click += new System.EventHandler(this.btnSalvarFone_Click);
             // 
             // btnLimparFone
             // 
@@ -445,6 +456,7 @@
             this.btnLimparFone.TabIndex = 26;
             this.btnLimparFone.Text = "LIMPAR";
             this.btnLimparFone.UseVisualStyleBackColor = false;
+            this.btnLimparFone.Click += new System.EventHandler(this.btnLimparFone_Click);
             // 
             // lblCodCadastro
             // 
@@ -479,6 +491,7 @@
             this.btnFecharFone.Size = new System.Drawing.Size(39, 38);
             this.btnFecharFone.TabIndex = 23;
             this.btnFecharFone.UseVisualStyleBackColor = false;
+            this.btnFecharFone.Click += new System.EventHandler(this.btnFecharFone_Click);
             // 
             // txtDescricao
             // 
@@ -489,6 +502,7 @@
             this.txtDescricao.Name = "txtDescricao";
             this.txtDescricao.Size = new System.Drawing.Size(422, 31);
             this.txtDescricao.TabIndex = 18;
+            this.txtDescricao.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDescricao_KeyPress);
             // 
             // lblDescricao
             // 
@@ -518,6 +532,7 @@
             this.cmbOperadora.Name = "cmbOperadora";
             this.cmbOperadora.Size = new System.Drawing.Size(193, 30);
             this.cmbOperadora.TabIndex = 16;
+            this.cmbOperadora.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmbOperadora_KeyPress);
             // 
             // lblOperadora
             // 
@@ -552,6 +567,7 @@
             this.mkdCadTelefone.Size = new System.Drawing.Size(204, 31);
             this.mkdCadTelefone.TabIndex = 8;
             this.mkdCadTelefone.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.mkdCadTelefone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mkdCadTelefone_KeyPress);
             // 
             // lblCadTelefone
             // 

@@ -23,7 +23,7 @@ namespace kibelezaTi16Joyce
             try
             {
                 banco.Conectar();
-                string selecionar = "SELECT * FROM clientecompleta;";
+                string selecionar = "SELECT * FROM clientecompleto;";
                 MySqlCommand cmd = new MySqlCommand(selecionar, banco.conexao);
                 MySqlDataAdapter da = new MySqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
