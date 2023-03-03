@@ -30,8 +30,8 @@
         {
             this.pnlReserva = new System.Windows.Forms.Panel();
             this.lblDataReserva = new System.Windows.Forms.Label();
-            this.meuCalendario1 = new kibelezaTi16Joyce.MeuCalendario();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.calReserva = new kibelezaTi16Joyce.MeuCalendario();
+            this.cmbStatus = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlInfoReserva = new System.Windows.Forms.Panel();
             this.cmbServico = new System.Windows.Forms.ComboBox();
@@ -40,7 +40,7 @@
             this.lblCliente = new System.Windows.Forms.Label();
             this.cmbFuncionario = new System.Windows.Forms.ComboBox();
             this.lblFuncionario = new System.Windows.Forms.Label();
-            this.cmbTempExecucao = new System.Windows.Forms.ComboBox();
+            this.cmbHorario = new System.Windows.Forms.ComboBox();
             this.lblHorario = new System.Windows.Forms.Label();
             this.btnFechar = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
@@ -59,11 +59,11 @@
             this.pnlReserva.BackgroundImage = global::kibelezaTi16Joyce.Properties.Resources.reserva;
             this.pnlReserva.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlReserva.Controls.Add(this.lblDataReserva);
-            this.pnlReserva.Controls.Add(this.meuCalendario1);
-            this.pnlReserva.Controls.Add(this.comboBox3);
+            this.pnlReserva.Controls.Add(this.calReserva);
+            this.pnlReserva.Controls.Add(this.cmbStatus);
             this.pnlReserva.Controls.Add(this.label1);
             this.pnlReserva.Controls.Add(this.pnlInfoReserva);
-            this.pnlReserva.Controls.Add(this.cmbTempExecucao);
+            this.pnlReserva.Controls.Add(this.cmbHorario);
             this.pnlReserva.Controls.Add(this.lblHorario);
             this.pnlReserva.Controls.Add(this.btnFechar);
             this.pnlReserva.Controls.Add(this.btnSalvar);
@@ -91,32 +91,34 @@
             this.lblDataReserva.TabIndex = 39;
             this.lblDataReserva.Text = "DATA DA RESERVA";
             // 
-            // meuCalendario1
+            // calReserva
             // 
-            this.meuCalendario1.Font = new System.Drawing.Font("Britannic Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.meuCalendario1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
-            this.meuCalendario1.Location = new System.Drawing.Point(668, 162);
-            this.meuCalendario1.Name = "meuCalendario1";
-            this.meuCalendario1.TabIndex = 38;
-            this.meuCalendario1.TitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
-            this.meuCalendario1.TitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(204)))), ((int)(((byte)(209)))));
-            this.meuCalendario1.TrailingForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(204)))), ((int)(((byte)(209)))));
+            this.calReserva.Font = new System.Drawing.Font("Britannic Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calReserva.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
+            this.calReserva.Location = new System.Drawing.Point(668, 162);
+            this.calReserva.Name = "calReserva";
+            this.calReserva.TabIndex = 38;
+            this.calReserva.TitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
+            this.calReserva.TitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(204)))), ((int)(((byte)(209)))));
+            this.calReserva.TrailingForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(204)))), ((int)(((byte)(209)))));
+            this.calReserva.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.calReserva_DateSelected);
             // 
-            // comboBox3
+            // cmbStatus
             // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.Enabled = false;
-            this.comboBox3.Font = new System.Drawing.Font("Britannic Bold", 15.25F);
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.cmbStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbStatus.Enabled = false;
+            this.cmbStatus.Font = new System.Drawing.Font("Britannic Bold", 15.25F);
+            this.cmbStatus.FormattingEnabled = true;
+            this.cmbStatus.Items.AddRange(new object[] {
             "AGUARDANDO",
             "APROVADA",
             "CANCELADA",
             "FINALIZADA"});
-            this.comboBox3.Location = new System.Drawing.Point(214, 422);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(442, 30);
-            this.comboBox3.TabIndex = 37;
+            this.cmbStatus.Location = new System.Drawing.Point(214, 422);
+            this.cmbStatus.Name = "cmbStatus";
+            this.cmbStatus.Size = new System.Drawing.Size(442, 30);
+            this.cmbStatus.TabIndex = 37;
+            this.cmbStatus.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmbStatus_KeyPress);
             // 
             // label1
             // 
@@ -157,6 +159,7 @@
             this.cmbServico.Name = "cmbServico";
             this.cmbServico.Size = new System.Drawing.Size(422, 30);
             this.cmbServico.TabIndex = 18;
+            this.cmbServico.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmbServico_KeyPress);
             // 
             // lblStatus
             // 
@@ -183,6 +186,7 @@
             this.cmbCliente.Name = "cmbCliente";
             this.cmbCliente.Size = new System.Drawing.Size(422, 30);
             this.cmbCliente.TabIndex = 16;
+            this.cmbCliente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmbCliente_KeyPress);
             // 
             // lblCliente
             // 
@@ -209,6 +213,8 @@
             this.cmbFuncionario.Name = "cmbFuncionario";
             this.cmbFuncionario.Size = new System.Drawing.Size(422, 30);
             this.cmbFuncionario.TabIndex = 14;
+            this.cmbFuncionario.SelectionChangeCommitted += new System.EventHandler(this.cmbFuncionario_SelectionChangeCommitted);
+            this.cmbFuncionario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmbFuncionario_KeyPress);
             // 
             // lblFuncionario
             // 
@@ -222,23 +228,24 @@
             this.lblFuncionario.TabIndex = 13;
             this.lblFuncionario.Text = "FUNCIONÁRIO";
             // 
-            // cmbTempExecucao
+            // cmbHorario
             // 
-            this.cmbTempExecucao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbTempExecucao.Enabled = false;
-            this.cmbTempExecucao.Font = new System.Drawing.Font("Britannic Bold", 15.25F);
-            this.cmbTempExecucao.FormattingEnabled = true;
-            this.cmbTempExecucao.Items.AddRange(new object[] {
+            this.cmbHorario.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHorario.Enabled = false;
+            this.cmbHorario.Font = new System.Drawing.Font("Britannic Bold", 15.25F);
+            this.cmbHorario.FormattingEnabled = true;
+            this.cmbHorario.Items.AddRange(new object[] {
             "0:30",
             "1:00",
             "1:30",
             "2:00",
             "2:30",
             "3:00"});
-            this.cmbTempExecucao.Location = new System.Drawing.Point(985, 162);
-            this.cmbTempExecucao.Name = "cmbTempExecucao";
-            this.cmbTempExecucao.Size = new System.Drawing.Size(197, 30);
-            this.cmbTempExecucao.TabIndex = 33;
+            this.cmbHorario.Location = new System.Drawing.Point(985, 162);
+            this.cmbHorario.Name = "cmbHorario";
+            this.cmbHorario.Size = new System.Drawing.Size(197, 30);
+            this.cmbHorario.TabIndex = 33;
+            this.cmbHorario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmbHorario_KeyPress);
             // 
             // lblHorario
             // 
@@ -264,6 +271,7 @@
             this.btnFechar.Size = new System.Drawing.Size(45, 45);
             this.btnFechar.TabIndex = 22;
             this.btnFechar.UseVisualStyleBackColor = false;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
             // btnSalvar
             // 
@@ -279,6 +287,7 @@
             this.btnSalvar.TabIndex = 21;
             this.btnSalvar.Text = "SALVAR";
             this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnLimpar
             // 
@@ -293,6 +302,7 @@
             this.btnLimpar.TabIndex = 20;
             this.btnLimpar.Text = "LIMPAR";
             this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // txtObservacao
             // 
@@ -302,6 +312,7 @@
             this.txtObservacao.Name = "txtObservacao";
             this.txtObservacao.Size = new System.Drawing.Size(836, 31);
             this.txtObservacao.TabIndex = 4;
+            this.txtObservacao.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtObservacao_KeyPress);
             // 
             // txtCodigo
             // 
@@ -379,7 +390,7 @@
         private System.Windows.Forms.Label lblCliente;
         private System.Windows.Forms.ComboBox cmbFuncionario;
         private System.Windows.Forms.Label lblFuncionario;
-        private System.Windows.Forms.ComboBox cmbTempExecucao;
+        private System.Windows.Forms.ComboBox cmbHorario;
         private System.Windows.Forms.Label lblHorario;
         private System.Windows.Forms.Button btnFechar;
         private System.Windows.Forms.Button btnSalvar;
@@ -390,10 +401,10 @@
         private System.Windows.Forms.Label lblCodigo;
         private System.Windows.Forms.Label lblReserva;
         private System.Windows.Forms.Label lblStatus;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cmbStatus;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmbServico;
         private System.Windows.Forms.Label lblDataReserva;
-        private MeuCalendario meuCalendario1;
+        private MeuCalendario calReserva;
     }
 }

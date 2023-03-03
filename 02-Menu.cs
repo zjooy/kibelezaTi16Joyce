@@ -131,11 +131,17 @@ namespace kibelezaTi16Joyce
         private void btnEditar_Click(object sender, EventArgs e)
         {
             esconderBotoes();
+            new frmReserva().Show();
+            variaveis.funcao = "EDITAR";
+            Hide();
         }
 
         private void btnAgendar_Click(object sender, EventArgs e)
         {
             esconderBotoes();
+            new frmReserva().Show();
+            variaveis.funcao = "AGENDAR";
+            Hide();
         }
 
         private void pctFuncionario_Click(object sender, EventArgs e)
