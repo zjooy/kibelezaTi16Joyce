@@ -223,7 +223,7 @@ namespace kibelezaTi16Joyce
 
         private void btnFechar_Click(object sender, EventArgs e)
         {
-            new frmMenuPrincipal();
+            new frmMenuPrincipal().Show();
             Hide();
         }
 

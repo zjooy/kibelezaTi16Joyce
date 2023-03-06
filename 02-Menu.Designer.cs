@@ -32,7 +32,6 @@
             this.pnlMenu = new System.Windows.Forms.Panel();
             this.pnlReserva = new System.Windows.Forms.Panel();
             this.btnFinalizar = new System.Windows.Forms.Button();
-            this.dgvReserva = new System.Windows.Forms.DataGridView();
             this.btnAgendar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnAguardar = new System.Windows.Forms.Button();
@@ -57,9 +56,9 @@
             this.pctSair = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.dgvReserva = new System.Windows.Forms.DataGridView();
             this.pnlMenu.SuspendLayout();
             this.pnlReserva.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvReserva)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctReserva)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctRelatorio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctServico)).BeginInit();
@@ -68,6 +67,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pctCliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctSair)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReserva)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMenu
@@ -93,8 +93,8 @@
             // pnlReserva
             // 
             this.pnlReserva.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
-            this.pnlReserva.Controls.Add(this.btnFinalizar);
             this.pnlReserva.Controls.Add(this.dgvReserva);
+            this.pnlReserva.Controls.Add(this.btnFinalizar);
             this.pnlReserva.Controls.Add(this.btnAgendar);
             this.pnlReserva.Controls.Add(this.btnEditar);
             this.pnlReserva.Controls.Add(this.btnAguardar);
@@ -127,15 +127,6 @@
             this.btnFinalizar.UseVisualStyleBackColor = false;
             this.btnFinalizar.Visible = false;
             this.btnFinalizar.Click += new System.EventHandler(this.btnFinalizar_Click);
-            // 
-            // dgvReserva
-            // 
-            this.dgvReserva.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
-            this.dgvReserva.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvReserva.Location = new System.Drawing.Point(3, 102);
-            this.dgvReserva.Name = "dgvReserva";
-            this.dgvReserva.Size = new System.Drawing.Size(784, 299);
-            this.dgvReserva.TabIndex = 16;
             // 
             // btnAgendar
             // 
@@ -248,6 +239,7 @@
             this.cmbStatus.Name = "cmbStatus";
             this.cmbStatus.Size = new System.Drawing.Size(180, 31);
             this.cmbStatus.TabIndex = 9;
+            this.cmbStatus.SelectedIndexChanged += new System.EventHandler(this.cmbStatus_SelectedIndexChanged);
             // 
             // lblStatus
             // 
@@ -269,6 +261,7 @@
             this.txtCliente.Name = "txtCliente";
             this.txtCliente.Size = new System.Drawing.Size(409, 31);
             this.txtCliente.TabIndex = 7;
+            this.txtCliente.TextChanged += new System.EventHandler(this.txtCliente_TextChanged);
             // 
             // lblCliente
             // 
@@ -432,6 +425,15 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // dgvReserva
+            // 
+            this.dgvReserva.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
+            this.dgvReserva.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvReserva.Location = new System.Drawing.Point(10, 102);
+            this.dgvReserva.Name = "dgvReserva";
+            this.dgvReserva.Size = new System.Drawing.Size(767, 285);
+            this.dgvReserva.TabIndex = 18;
+            // 
             // frmMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -451,7 +453,6 @@
             this.pnlMenu.ResumeLayout(false);
             this.pnlReserva.ResumeLayout(false);
             this.pnlReserva.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvReserva)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctReserva)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctRelatorio)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctServico)).EndInit();
@@ -460,6 +461,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pctCliente)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctSair)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReserva)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -490,9 +492,9 @@
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnAguardar;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.DataGridView dgvReserva;
         private System.Windows.Forms.Button btnFinalizar;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.DataGridView dgvReserva;
     }
 }
