@@ -51,5 +51,8 @@ namespace kibelezaTi16Joyce
         public static int codReserva;
         public static string obsReserva, statusReserva;
         public static DateTime dataReserva, horarioReserva;
+
+        //Relatorio
+        public static string relatorio;
     }
 }

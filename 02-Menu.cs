@@ -27,7 +27,7 @@ namespace kibelezaTi16Joyce
             try
             {
                 banco.Conectar();
-                string selecionar = "SELECT * FROM `reservadata` WHERE `CLIENTE` LIKE '%"+variaveis.nomeCliente + "'";
+                string selecionar = "SELECT * FROM `reservadata` WHERE `CLIENTE` LIKE '%"+variaveis.nomeCliente + "%'";
                 MySqlCommand cmd = new MySqlCommand(selecionar, banco.conexao);
                 MySqlDataAdapter da = new MySqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
@@ -50,7 +50,7 @@ namespace kibelezaTi16Joyce
             try
             {
                 banco.Conectar();
-                string selecionar = "SELECT * FROM `reservadata` WHERE `STATUS`=@status AND `CLIENTE` LIKE '%" + variaveis.nomeCliente + "'";
+                string selecionar = "SELECT * FROM `reservadata` WHERE `STATUS`=@status AND `CLIENTE` LIKE '%" + variaveis.nomeCliente + "%'";
                 MySqlCommand cmd = new MySqlCommand(selecionar, banco.conexao);
                 cmd.Parameters.AddWithValue("@status", variaveis.statusReserva);
                 MySqlDataAdapter da = new MySqlDataAdapter(cmd);
@@ -320,8 +320,10 @@ namespace kibelezaTi16Joyce
             }
         }
 
+        //PROBLEMA
         private void txtCliente_TextChanged(object sender, EventArgs e)
         {
+
             variaveis.statusReserva = cmbStatus.Text;
             variaveis.nomeCliente = txtCliente.Text;
             if (variaveis.statusReserva == "TODAS")
@@ -331,6 +333,7 @@ namespace kibelezaTi16Joyce
             else
             {
                 CarregarReservaStatus();
+
             }
         }
 

@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.pnlMenu = new System.Windows.Forms.Panel();
             this.pnlReserva = new System.Windows.Forms.Panel();
+            this.dgvReserva = new System.Windows.Forms.DataGridView();
             this.btnFinalizar = new System.Windows.Forms.Button();
             this.btnAgendar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
@@ -56,9 +57,9 @@
             this.pctSair = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.dgvReserva = new System.Windows.Forms.DataGridView();
             this.pnlMenu.SuspendLayout();
             this.pnlReserva.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReserva)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctReserva)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctRelatorio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctServico)).BeginInit();
@@ -67,7 +68,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pctCliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctSair)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvReserva)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMenu
@@ -109,6 +109,17 @@
             this.pnlReserva.Name = "pnlReserva";
             this.pnlReserva.Size = new System.Drawing.Size(790, 404);
             this.pnlReserva.TabIndex = 14;
+            // 
+            // dgvReserva
+            // 
+            this.dgvReserva.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
+            this.dgvReserva.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvReserva.Location = new System.Drawing.Point(10, 102);
+            this.dgvReserva.Name = "dgvReserva";
+            this.dgvReserva.Size = new System.Drawing.Size(767, 285);
+            this.dgvReserva.TabIndex = 18;
+            this.dgvReserva.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvReserva_CellClick);
+            this.dgvReserva.ColumnHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvReserva_ColumnHeaderMouseClick);
             // 
             // btnFinalizar
             // 
@@ -425,15 +436,6 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // dgvReserva
-            // 
-            this.dgvReserva.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(10)))), ((int)(((byte)(45)))));
-            this.dgvReserva.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvReserva.Location = new System.Drawing.Point(10, 102);
-            this.dgvReserva.Name = "dgvReserva";
-            this.dgvReserva.Size = new System.Drawing.Size(767, 285);
-            this.dgvReserva.TabIndex = 18;
-            // 
             // frmMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -453,6 +455,7 @@
             this.pnlMenu.ResumeLayout(false);
             this.pnlReserva.ResumeLayout(false);
             this.pnlReserva.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReserva)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctReserva)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctRelatorio)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctServico)).EndInit();
@@ -461,7 +464,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pctCliente)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctSair)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvReserva)).EndInit();
             this.ResumeLayout(false);
 
         }
