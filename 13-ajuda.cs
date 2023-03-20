@@ -16,5 +16,17 @@ namespace kibelezaTi16Joyce
         {
             InitializeComponent();
         }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            new frmMenuPrincipal().Show();
+            Hide();
+        }
+
+        private void frmAjuda_Load(object sender, EventArgs e)
+        {
+            pnlAjuda.Location = new Point(this.Width / 2 - pnlAjuda.Width / 2, this.Height / 2 - pnlAjuda.Height / 2);
+
+        }
     }
 }

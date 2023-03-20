@@ -185,7 +185,6 @@ namespace kibelezaTi16Joyce
         private void btnAprovar_Click(object sender, EventArgs e)
         {
             esconderBotoes();
-
             variaveis.statusReserva = "APROVADA";
             AlterarStatus();
             variaveis.statusReserva = cmbStatus.Text;
@@ -333,7 +332,6 @@ namespace kibelezaTi16Joyce
             else
             {
                 CarregarReservaStatus();
-
             }
         }
 
@@ -352,6 +350,10 @@ namespace kibelezaTi16Joyce
             dgvReserva.ClearSelection();
         }
 
-       
+        private void lblAjuda_Click(object sender, EventArgs e)
+        {
+            new frmAjuda().Show();
+            Hide();
+        }
     }
 }
